@@ -1,0 +1,30 @@
+.category-selection-page {
+    >div:first-child {
+        display: flex;
+        margin: 92px 140px;
+        align-items: center;
+        justify-content: center;
+        p {
+            font-size: 16px;
+            position: absolute;
+            left: 140px;
+            span:first-child {
+                color: #828282;
+            }
+            span {
+                cursor: pointer;
+            }
+        }
+        h2 {
+            font-size: 26px;
+        }
+    }
+    >div:last-child {
+        display: grid;
+        grid-template-columns: repeat(4, 327px);
+        gap: 10px;
+        justify-content: center;
+        grid-row-gap: 46px;
+        margin-bottom: 92px;
+    }
+}

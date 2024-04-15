@@ -1,0 +1,226 @@
+
+.reg{
+    z-index: 5;
+}
+.register-page{
+    height: 100vh;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Nunito;
+    z-index: 11;
+}
+
+.register-container{
+    max-width: 500px;
+    width: 100%;
+    min-height: 800px;
+    padding-left: 92px;
+    padding-right: 92px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    backdrop-filter: blur(4px);
+    background-color: white;
+}
+
+.register-header{
+    margin-left: -92px;
+    margin-right: -92px;
+    max-width: 500px;
+    height: 57px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-header-text{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.register-header-image{
+    padding-right: 20px;
+}
+.register-header-image:hover{
+    cursor: pointer;
+}
+
+.register-secondheader{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.registerbutton{
+    background-color: black;
+    display: block;
+    height: 39px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    transition: all 0.5s ease;
+    box-shadow: 0px 15px 10px -15px black;  
+    border: 2px solid black;
+}
+.registerbutton:hover{
+    background-color: white;
+    transition: all 0.5s ease;
+    border: 2px solid black;
+    color: black;
+}
+
+.show-hide-btn{
+    z-index: 1;
+    position: relative;
+}
+.show-hide-btn:before {
+    content: "";
+    position: absolute;
+    left: 275px;
+    top: 37px;
+    width: 22px;
+    height: 22px;
+    background: url("../../../../assets/show-hide-hide.png") center / contain no-repeat;
+    transition: all 0.3s ease;
+}
+.show-hide-btn:hover{
+    cursor: pointer;
+}
+.show-hide-btn:hover::before{
+  background: url("../../../../assets/show-hide-hide-black.png") center / contain no-repeat;
+}
+
+.show::before{
+    background: url("../../../../assets/show-hide.png") center / contain no-repeat;
+  }
+  .show:hover::before{
+    background: url("../../../../assets/show-hide-black.png") center / contain no-repeat;
+  }
+
+.register-forms{
+    label{
+        font-size: 12px;
+        font-weight: 400;
+        color: black;
+    }
+    input{
+        z-index: 2;
+        background: white;
+        border-color: black;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 5px;
+        border: 2px solid black;       
+    }
+}
+
+.sign-in-text{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sign-inbuttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-inbutton{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 40px;
+    max-width: 150px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    color: black;
+    margin-bottom: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.sign-inbutton:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.5s ease;
+}
+.sign-inbutton img{
+    padding-right: 10px;
+}
+
+@media (max-width: 580px){
+    .register-container{
+        width: 100%;
+        max-width: 100%;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    .register-header{
+        max-width: 600px;
+        height: 57px;
+        border-radius: 0px;
+        margin-left: -22px;
+        margin-right: -22px;
+    }
+    .registerbutton{
+        height: 49px;
+        max-width: 100%;
+        width: 100%;
+        font-size: 22px;
+        margin-bottom: 45px;
+        margin-top: 55px;
+    }
+    .register-secondheader{
+
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .sign-inbutton{
+        max-width: 130px;
+        font-size: 20px;
+    }
+    .sign-in-text{
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .register-forms{
+        input{
+            font-size: 18px;
+        }
+        label{
+            font-size: 16px;
+        }
+    }
+    .sign-inbuttons{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 25px;
+    }
+    .show-hide-btn:before {
+        left: 425px;
+    }
+}

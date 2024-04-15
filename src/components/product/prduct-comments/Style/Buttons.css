@@ -1,0 +1,129 @@
+.conteierButt {
+  display: flex;
+  flex-direction: row;
+  gap: 100px; 
+  margin-bottom: 16px;
+  .sortCommnet {
+    width: 247px;
+    padding: 10px 20px;
+    flex-shrink: 0;
+    border-top: 1px solid var(--Black, #000);
+    background: var(--White, #FFF);
+    position: relative;
+    
+  }
+  .sortCommnet .conteinerdrop {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    
+  }
+  .sortCommnet:focus-within .conteinerdrop {
+    display: flex;
+
+  }
+  .sortCommnet .headButton {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .sortCommnet .headButton img {
+    width: 20px;
+    height: 11.667px;
+    flex-shrink: 0;
+  }
+  
+  .sortCommnet.open {
+    border: 1px solid black;
+  }
+
+  .writeComment {
+    display: flex;
+    width: 230px;
+    height: 50px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: var(--Black, #000);
+    span {
+      color: #F5F5F5;
+    }
+  }
+
+}
+
+
+
+.buyButt {
+  width: 100%; 
+  height: 47px;
+  flex-shrink: 0;
+  background: var(--Black, #000);
+  span {
+    color: white;
+  }
+  margin-top: 20px;
+}
+.buyButt.isCart{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10.5px;
+  width: 100%; 
+  height: 47px;
+  flex-shrink: 0;
+  background: var(--Black, #fff);
+  border-bottom:2px solid #000 ;
+  span {
+    color: black;
+  }
+  margin-top: 20px;
+}
+
+.buttonslt{
+display: flex;
+flex-direction: row;
+margin-top: 40px;
+
+  .cancel
+  {
+    display: flex;
+  width: 275px;
+  height: 45px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  }
+  .submit
+  {
+    display: flex;
+  width: 275px;
+  height: 45px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+  background-color: #000
+  ;
+  }
+}
+
+.allComents{
+  display: inline-flex;
+  padding: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 25%;
+
+  background: var(--Black, #fff);
+  margin-top: 20px;
+  border-bottom: 1px solid var(--Black, #000);
+  
+}

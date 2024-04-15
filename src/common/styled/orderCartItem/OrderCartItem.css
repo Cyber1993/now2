@@ -1,0 +1,83 @@
+.order-cart-item {
+    display: flex;
+    gap: 46px;
+    > div {
+        display: flex;
+        align-items: center;
+        .order-cart-item-info {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            width: 260px;
+            > p {
+                color: var(--black, #000);
+                font-size: 14px;
+            }
+            > div {
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+            }
+            .price-discount {
+                p:first-child {
+                    color: var(--gray, rgba(159, 159, 159, 0.62));
+                    font-size: 14px;
+                    text-decoration: line-through;
+                    span {
+                        color: var(--gray, rgba(159, 159, 159, 0.62));
+                        font-size: 12px;
+                        text-decoration: line-through;
+                    }
+                }
+                p:last-child {
+                    color: var(--red, #F93232);
+                    font-size: 16px;
+                    font-weight: 500;
+                    span {
+                        color: var(--red, #F93232);
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .price-single {
+                color: var(--black, #000);
+                font-size: 18px;
+                font-weight: 500;
+                span {
+                    color: var(--black, #000);
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    > div:first-child {
+        gap: 20px;
+        img {
+            height: 156px;
+            width: 251px;
+            object-fit: contain;
+        }
+    }
+    > div:last-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        p {
+            color: var(--black, #000);
+            font-size: 16px;
+            font-weight: 500;
+            span {
+                color: var(--black, #000);
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+        .delete-icon-container {
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+        }
+    }
+}

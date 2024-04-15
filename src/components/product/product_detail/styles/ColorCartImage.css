@@ -1,0 +1,18 @@
+.silver {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 23px;
+  
+  gap: 10px;
+  width: 200px;
+  height: auto;
+  background: #F5F5F5;
+  border-radius: 10px;
+  margin-top: 120px;
+}
+@media screen and (max-width: 600px) {
+  .silver {
+    margin-left: 20px;
+  }
+}

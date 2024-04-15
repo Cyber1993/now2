@@ -1,0 +1,63 @@
+.conteinerButtons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.buy,
+.credit {
+  position: relative;
+  width: 220px;
+  height: 65px;
+  border-radius: 5px;
+  color: white;
+}
+
+.buy {
+  background: #000000;
+  margin-right: 27px;
+}
+
+.credit {
+  border: 2px solid #000000;
+  color: #000000;
+  margin-right: 27px;
+}
+
+.scale {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  width: 140px;
+  height: 65px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.scale img {
+  width: 30%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .conteinerButtons {
+    flex-direction: column;
+  }
+
+  .buy,
+  .credit,
+  .scale {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .scale img{
+    width: 5%;
+    height: 100%;
+  }
+}

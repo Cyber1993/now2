@@ -1,0 +1,95 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #000000;
+    padding: 0 70px;
+    width: 100%;
+    gap: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    .header-logo-catalog {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        .header-logo {
+            width: 170px;
+        }
+        .header-logo:hover{
+            cursor: pointer;
+        }
+        .catalog-button {
+            height: 48px;
+            display: flex;
+            align-items: center;
+            color: white;
+            gap: 10px;
+            padding: 10px;
+            border: 1px white solid;
+            border-radius: 5px;
+        }
+    }
+    search {
+        position: relative;
+        input {
+            width: 700px;
+            height: 50px;
+            color: white;
+            background-color: #000000;
+            border-radius: 5px;
+            border: 1px white solid;
+        }
+        button {
+            color: white;
+            svg {
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+    }
+    .header-right-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 3;
+        .ellipse {
+            width: 7px;
+            height: 7px;
+            background-color: #009B20;
+            border-radius: 50%;
+        }
+        button {
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 16px;
+        }
+        >div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            img {
+                height: 44px;
+                width: 44px;
+                cursor: pointer;
+            }
+        }
+        >div:last-child {
+            gap: 30px;
+            img:first-child {
+                border-radius: 50%;
+            }
+            img:last-child:hover {
+                transform: rotate(-15deg);
+            }
+            .rotate-negative-15 {
+                transform: rotate(-15deg);
+            }
+        }
+    }
+}

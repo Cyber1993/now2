@@ -1,0 +1,63 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 46px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.description h2 {
+  width: 542px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  text-align: center;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.description img {
+  width: 33%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .description h2 {
+    width: 100%;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .description h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    top: 0;
+  }
+
+  .description h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+
+}
+
+@media screen and (max-width: 576px) {
+  .description h2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}

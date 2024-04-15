@@ -1,0 +1,27 @@
+.colors {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 13px;
+  margin-bottom: 40px;
+}
+
+.color {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.color svg {
+  width: 40px;
+  height: 40px;
+}
+
+.tet {
+  text-align: start;
+  color: var(--dark_grey, #828282);
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}

@@ -1,0 +1,59 @@
+
+@font-face{
+    font-family: Nunito;
+    src: url(./fonts/Nunito-VariableFont_wght.ttf) format(truetype);
+    font-style: normal;
+}
+
+@font-face{
+    font-family: Nunito;
+    src: url(./fonts/Nunito-Italic-VariableFont_wght.ttf) format(truetype);
+    font-style: italic;
+}
+
+:root {
+    --gray: #9F9F9F9E;
+    --black: #000000;
+    --red: #F93232;
+    --white: #FFFFFF;
+    --dark_grey: #828282;
+    --light_gray: #F5F5F5;
+}
+
+.background-dark {
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+label.checkbox {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    border-radius: 2px;
+}
+
+label.checkbox::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: black;
+    border: 2px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label.checkbox::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}

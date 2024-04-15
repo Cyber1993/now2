@@ -1,0 +1,54 @@
+.kit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 46px;
+  position: relative;
+  width: 100%;
+  max-width: 563px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.kit h2 {
+  width: 100%;
+  max-width: 378px;
+  font: 700 40px/55px 'Nunito';
+  color: #000;
+}
+
+.kit img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 23px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .kit {
+    top: 0;
+  }
+
+  .kit h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .kit img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .kit h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .kit img {
+    gap: 10px;
+  }
+}

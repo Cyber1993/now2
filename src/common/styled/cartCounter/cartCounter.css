@@ -1,0 +1,16 @@
+.cart-counter {
+    display: flex;
+    gap: 10px;
+    padding: 5px 0;
+    button {
+        font-size: 24px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    p {
+        cursor: auto;
+        font-size: 18px;
+        border-bottom: solid 2px #828282;
+        padding: 10px 10px 5px;
+    }
+}

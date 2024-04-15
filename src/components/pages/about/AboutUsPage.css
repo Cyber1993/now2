@@ -1,0 +1,75 @@
+footer{
+    margin-top:40vh;
+}
+
+.about-main{
+    height: 100%;
+    font-family: Nunito;
+    display: flex;
+    justify-content: center;
+}
+
+.about-page{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.about-header{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.74px;
+    margin-bottom: 30px;
+}
+
+.about-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.82px;
+    margin-bottom: 50px;
+    p{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 27.28px;
+        margin-bottom: 10px;
+    }
+}
+
+.about-columns{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-column{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.82px;
+    width: 50%;
+    padding-right: 10px;
+    margin-bottom: 50px;
+    p{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32.74px;
+    margin-bottom: 10px;
+    color: green;
+    }
+}
+
+@media (max-width: 400px){
+    .about-page{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .about-text{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.1px;
+    }
+    .about-column{
+        font-size: 14px;
+        line-height: 19.1px;
+    }
+}

@@ -1,0 +1,35 @@
+@import './Priceses.css';
+@import './Single.css';
+@import './NoComprasion.css';
+@import './Comparison.css';
+@import './MultipleProduct.css';
+@import './TableComparison.css';
+
+.body2-0 {
+  margin-left: 40px;
+}
+
+.butonsHed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+.HeadTxt{
+  color: var(--Black, #000);
+  font-family: Nunito;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 40px;
+}
+
+.popularProd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+

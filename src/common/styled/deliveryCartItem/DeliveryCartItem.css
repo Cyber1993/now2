@@ -1,0 +1,39 @@
+.delivery-cart-item {
+    display: flex;
+    gap: 100px;
+    img {
+        object-fit: contain;
+        width: 200px;
+        height: 119px;
+    }
+    >div {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        max-width: 229px;
+        justify-content: center;
+        >p:first-child {
+            color: var(--black, #000);
+            font-size: 14px;
+        }
+        >p:nth-child(2) {
+            color: var(--gray, rgba(159, 159, 159, 0.62));
+            text-decoration: line-through;
+            span {
+                color: var(--gray, rgba(159, 159, 159, 0.62));
+                font-size: 12px;
+                text-decoration: line-through;
+            }
+        }
+        >p:nth-child(3) {
+            color: var(--red, #F93232);
+            font-size: 16px;
+            font-weight: 500;
+            span {
+                color: var(--red, #F93232);
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+    }
+}

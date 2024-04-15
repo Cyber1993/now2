@@ -1,0 +1,50 @@
+.sidebar-background{
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    position: fixed;
+    z-index: 15;
+    display: flex;
+    justify-content: start;
+}
+
+.sidebar-page{
+    z-index: 15;
+    width: 400px;
+    height: 100%;
+}
+
+.sidebar-container{
+    background-color: white;
+    height: calc(100vh);
+    font-family: Nunito;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.82px;
+    text-align: left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.sidebar-container::-webkit-scrollbar{
+    display: none;
+}
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 45px;
+    padding: 0px 10px;
+    .nav-vector{
+        width: 14px;
+        height: 14px;
+    }
+}
+.nav-option{
+    display: flex;
+    align-items: center;
+    padding: 50px 10px 0px 30px;
+    img{
+        padding-right: 10px;
+    }
+}

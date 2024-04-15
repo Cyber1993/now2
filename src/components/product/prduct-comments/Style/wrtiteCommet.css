@@ -1,0 +1,134 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto; 
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-height: 100%;
+  overflow-y: auto; 
+  scrollbar-width: none;
+
+}
+
+
+.content{
+  padding: 0 10% 0 10%;
+}
+
+.close
+{
+  border-radius: 5px 5px 0px 0px;
+  background: var(--Black, #000);
+  display: flex;
+  width: auto;
+  color: #fff;
+  padding: 15px 20px;
+  align-items: center;
+  gap: 720px;
+
+}
+
+
+
+
+
+  .ratingPr {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 80px;
+    justify-content: space-between;
+  }
+div[class^="stars-"]:hover svg,
+div[class^="stars-"].selected svg {
+  fill: #FF9F10;
+  stroke-width: 0;
+}
+div[class^="stars-"]:hover ~ div svg,
+div[class^="stars-"].selected ~ div svg {
+  fill: #FF9F10;
+  stroke-width: 0;
+}
+
+  
+
+
+.ratingPr .stars div {
+  margin-top: 23px;
+  text-align: start;
+}
+
+
+
+
+
+
+.ratining{
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  margin: 46px 0 46px 0;
+}
+
+
+.comm{
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 46px 0 13px 0;
+
+}
+
+.textCom textarea {
+  width: 100%;
+  height: 281px;
+  flex-direction: row;
+  resize: none;
+  border-radius: 5px;
+}
+.addimg{
+  margin-top: 23px;
+  .addphoto{
+    color: #000;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .desc{
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 13px;
+    margin-bottom: 23px;
+  }
+
+}
+.notice{
+  display: flex;
+  margin-top: 50px;
+  gap: 13px;
+}
+
+
